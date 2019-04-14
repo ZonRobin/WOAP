@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="IQ84hE" name="WOAP Runner" displaySplashScreen="0" reportAppUsage="0"
+              splashScreenColour="Dark" projectType="consoleapp" version="1.0.0"
+              bundleIdentifier="me.zonrobin.WOAP_Runner" includeBinaryInAppConfig="1"
+              cppLanguageStandard="14" companyCopyright="Robin Zon" jucerVersion="5.2.0"
+              companyName="Robin Zon" companyWebsite="zonrobin.me" companyEmail="mail@zonrobin.me">
+  <MAINGROUP id="AMmo19" name="WOAP Runner">
+    <GROUP id="{F56A8E07-29F3-22C6-C052-58E1E59A0294}" name="Source">
+      <FILE id="g5mKww" name="icon.png" compile="0" resource="1" file="icon.png"/>
+      <FILE id="Q1rBxc" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <VS2017 targetFolder="Builds/VisualStudio2017" windowsTargetPlatformVersion="10.0.16299.0"
+            smallIcon="g5mKww" bigIcon="g5mKww">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" winWarningLevel="4" generateManifest="1" winArchitecture="Win32"
+                       debugInformationFormat="ProgramDatabase" enablePluginBinaryCopyStep="0"
+                       linkTimeOptimisation="0" isDebug="1" optimisation="1" targetName="WOAP Runner"/>
+        <CONFIGURATION name="Release" winWarningLevel="4" generateManifest="1" winArchitecture="Win32"
+                       debugInformationFormat="ProgramDatabase" enablePluginBinaryCopyStep="0"
+                       linkTimeOptimisation="1" isDebug="0" optimisation="3" targetName="WOAP Runner"
+                       useRuntimeLibDLL="0"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2017>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+  </MODULES>
+  <JUCEOPTIONS/>
+</JUCERPROJECT>

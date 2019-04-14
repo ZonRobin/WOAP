@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es6",
+    "moduleResolution": "node",
+    "removeComments": true,
+    "noImplicitAny": false,
+    "noImplicitUseStrict": true,
+    "sourceMap": true,
+    "jsx": "react",
+    "typeRoots": [
+      "node_modules/@types/"
+    ],
+    "rootDir": "src"
+  },
+  "exclude": [
+    "node_modules",
+    "build",
+    "config",
+    "public",
+    "scripts",
+    "src/configuration.dist.ts"
+  ],
+  "compileOnSave": true
+}

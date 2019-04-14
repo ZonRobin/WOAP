@@ -1,0 +1,13 @@
+diff --git a/node_modules/node-resourcehacker/lib/index.js b/node_modules/node-resourcehacker/lib/index.js
+index 05bac65..1d7c93c 100644
+--- a/node_modules/node-resourcehacker/lib/index.js
++++ b/node_modules/node-resourcehacker/lib/index.js
+@@ -63,7 +63,7 @@ function exec(options, callback) {
+         return process.nextTick(function() { callback(new Error('ERROR_NO_RESOURCE_NAME')); });
+     }
+ 
+-    var args = [PATH_RESOURCE_HACKER_EXE];
++    var args = ["\"" + PATH_RESOURCE_HACKER_EXE + "\""];
+ 
+     switch(options.operation) {
+     case 'add':

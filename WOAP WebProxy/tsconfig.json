@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "outDir": "build",
+    "target": "es6",
+    "sourceMap": false,
+    "removeComments": true,
+    "typeRoots": [
+      "node_modules/@types/"
+    ]
+  },
+  "exclude": [
+    "assets",
+    "build",
+    "node_modules",
+    "scripts",
+    "configuration.dist.ts"
+  ],
+  "compileOnSave": true
+}

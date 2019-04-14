@@ -1,0 +1,60 @@
+<?xml version="1.0" ?>
+
+<PAGConfig version="1.0">
+    <plugin ref="Test plugin template" version="1" id="123456">
+        <parameters>
+            <parameter ref="Gain" type="float"/>
+            <parameter ref="Tube-in" type="switch"/>
+            <parameter ref="Delay-units" type="switch">
+                <step value="0"/>
+                <step value="0.5"/>
+                <step value="1"/>
+            </parameter>
+        </parameters>
+        <views>
+            <view default="1" name="PAG view 1" lang="pag-jsx">
+                <div style="width: 200px; height: 200px; position: relative;" class="demoView">
+                    <PAGPluginName />
+                    <PAGPluginId ref="background"/>
+                    <PAGImage ref="background"/>
+                    <div style="left: 50px; position: absolute;">
+                        <PAGParameter ref="param1">
+                            <PAGParameterName />
+                            <PAGRotarySlider size="50" color-fill="#181F22" color-accent="#42A2C8" inverted="1"/>
+                            <PAGParameterValue />
+                        </PAGParameter>
+                    </div>
+                    <div style="left: 100px; position: absolute;">
+                        <PAGParameter ref="param2">
+                            <PAGButton width="30" height="30" text="S" color-fill="#181F22" color-accent="#42A2C8"/>
+                        </PAGParameter>
+                    </div>
+                    <div style="left: 150px; position: absolute;">
+                        <PAGParameter ref="param3">
+                            <PAGLinearSlider width="20" height="50" color-fill="#181F22" color-accent="#42A2C8"/>
+                        </PAGParameter>
+                    </div>
+                </div>
+            </view>
+        </views>
+        <script type="text/javascript">
+            pluginModel.setExternalListener({
+                viewCreated: function() {
+                },
+                viewWillBeDeleted: function() {
+                },
+                parameterChanged: function(parameterModel, newValue, newValueText) {
+                },
+                activeChanged: function(newState) {
+                },
+                bypassChanged: function(newState) {
+                },
+                nameChanged: function(newName) {
+                }
+            });
+        </script>
+        <images>
+            <image ref="background">--- base64 image data ---</image>
+        </images>
+    </plugin>
+</PAGConfig>

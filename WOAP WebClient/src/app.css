@@ -1,0 +1,955 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    width: 100vw;
+    height: 100vh;
+    font-size: 13px;
+    overflow: hidden;
+    background: rgb(33, 33, 33) url("assets/logo-black.png") no-repeat center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* colorGrey - 808080 */
+
+
+* {
+    box-sizing: border-box;
+    outline: 0 !important;
+}
+
+*:focus, *:active {
+    outline:0;
+}
+
+:focus {outline:none;}
+::-moz-focus-inner {border:0;}
+
+button, input[type=submit] {
+    border-radius: 3px;
+    padding: 1px 0 0 0;
+    border: 1px solid rgb(90, 90, 90);
+    background-color: rgb(33, 33, 33);
+    color: #FFFFFF;
+    cursor: pointer;
+    display: block;
+    font-size: 14px;
+    height: 30px;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+button:active, input[type=submit]:active {
+    filter: brightness(125%);
+}
+
+.brightOnActive:active {
+    filter: brightness(125%);
+}
+
+.hidden {
+    display: none;
+}
+
+.willBeDeleted {
+    opacity: 0.3 !important;
+    -webkit-filter: grayscale(100%) !important;
+    filter: grayscale(100%) !important;
+    pointer-events : none !important;
+}
+
+.dragged {
+    opacity: 0.7;
+}
+
+.appRoot {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.react-contexify {
+    box-shadow: none !important;
+    background-color: transparent !important;
+    padding: 10px !important;
+}
+
+.contextMenu {
+    position: relative;
+    margin-right: 10px;
+    background: rgb(33, 33, 33);
+    padding: 2px;
+    box-shadow: 0 0 3px 3px rgb(90, 90, 90);
+    border: 2px solid rgb(40, 40, 40);
+    border-radius: 3px;
+}
+
+.buttonListItem {
+    width: 100%;
+    min-height: 30px;
+    display: block;
+}
+
+.loadingSpinner {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.loadingSpinner:not(.overlay) {
+    padding: 12px 10px 10px 10px;
+}
+
+.loadingSpinner.dark {
+    color: #333333;
+}
+
+.loadingSpinner:not(.dark) {
+    color: #FFFFFF;
+}
+
+.loadingSpinner:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.loadingSpinner.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 2px;
+    background-color: rgba(33, 33, 33, 0.6);
+}
+
+.nameLabel {
+    display: block;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.nameLabel .nameLabelWrap {
+    width: 100%;
+    height: 100%;
+}
+
+.nameLabel.nameLabelLight, .nameLabel.nameLabelLight input {
+    color: #FFFFFF;
+}
+
+.nameLabel.nameLabelDark, .nameLabel.nameLabelDark input {
+    color: #1A1A1A;
+}
+
+.nameLabel .nameLabelFitText {
+    padding-left: 2px;
+    width: calc(100% - 4px);
+}
+
+.nameLabel input {
+    background: none;
+    border: 2px solid rgb(100, 100, 100);
+    border-radius: 3px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.toastBox {
+    font-size: 14px;
+    border-radius: 3px !important;
+    text-align: center;
+}
+
+.toastAlertBox {
+    color: #000000;
+}
+
+.scrollableHorizontal .scrollableWrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    position: relative;
+    width: 100%;
+    min-width: inherit;
+    max-width: inherit;
+    top: 0 !important;
+}
+
+.scrollableHorizontal .scrollablePlaceholder {
+    width: 100%;
+}
+
+.scrollableVertical .scrollableWrapper {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    position: relative;
+    height: 100%;
+    min-height: inherit;
+    max-height: inherit;
+    left: 0 !important;
+}
+
+.scrollableVertical .scrollablePlaceholder {
+    height: 100%;
+}
+
+.slider {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.slider.panner {
+    background-color: rgb(33, 33, 33);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.slider.panner .valuePath {
+    position: absolute;
+    background-color: rgb(31, 186, 70);
+    height: 100%;
+}
+
+.slider.panner .valuePathLeft {
+    border-radius: 3px 0 0 3px;
+}
+
+.slider.panner .valuePathRight {
+    left: 50%;
+    border-radius: 0 3px 3px 0;
+}
+
+.slider.panner .midLine {
+    height: 100%;
+    width: 2px;
+    position: absolute;
+    left: calc(50% - 1px);
+    background-color: rgb(230, 230, 230);
+}
+
+.levelIndicator {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: rgb(33, 33, 33);
+    border-radius: 3px;
+}
+
+.levelIndicator.soloed:not(.clipping) .levelIndicatorBar {
+    background-color: yellow;
+}
+
+.levelIndicator.clipping {
+    border: 2px solid rgb(225, 37, 37);
+}
+
+.levelIndicator:not(.clipping) .levelIndicatorBar {
+    position: absolute;
+    background-color: rgb(31, 186, 70);
+}
+
+.levelIndicator.clipping .levelIndicatorBar {
+    position: absolute;
+    background-color: rgb(225, 37, 37);
+}
+
+.levelIndicator.fast .levelIndicatorBar {
+    transition: height 0.1s linear;
+}
+
+.levelIndicator:not(.fast) .levelIndicatorBar {
+    transition: height 0.2s linear;
+}
+
+.levelIndicator .levelIndicatorBar:nth-of-type(1) {
+    border-radius: 3px 0 0 3px;
+    left: 0;
+    bottom: 0;
+    width: 50%;
+}
+
+.levelIndicator .levelIndicatorBar:nth-of-type(2) {
+    border-radius: 0 3px 3px 0;
+    left: 50%;
+    bottom: 0;
+    width: 50%;
+}
+
+.track .dragHandle {
+    width: 100%;
+    margin-top: 5px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.mixer {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
+.mixer .bottomBar {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 40px;
+    background-color: #808080;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottomBar .iconButton {
+    width: 80px;
+    height: 30px;
+    font-size: 16px;
+}
+
+.bottomBar .trashButton {
+    margin-left: 20px;
+}
+
+.bottomBar .trashButton:not(.enabled):not(.active) {
+    cursor: default;
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.bottomBar .trashButton.enabled.active {
+    background: #7AD975;
+    color: #000000;
+}
+
+.addTrackButtonList {
+    width: 220px;
+}
+
+.addTrackButtonList button {
+    height: 40px;
+}
+
+.mixer .mixerContent {
+    display: flex;
+    height: calc(100vh - 45px);
+    overflow: hidden;
+}
+
+.trackList {
+    height: 597px;
+    max-height: calc(100% - 5px);
+    align-self: flex-end;
+    flex: 1 10 100%;
+}
+
+.trackList .track {
+    width: 94px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 3px;
+    height: 100%;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.trackList .draggableItemWrapper {
+    height: 100%;
+}
+
+.trackList .draggableItemOuterWrapper {
+    height: 100%;
+}
+
+.trackList .track:not(.selected) {
+    border: 1px solid rgb(90, 90, 90);
+}
+
+.trackList .track.selected {
+    border: 1px solid rgb(230, 230, 230);
+}
+
+.trackPluginList, .trackSendList {
+    background-color: rgb(215, 215, 215);
+    border-radius: 3px;
+    width: 100%;
+    position: relative;
+    padding: 1px;
+}
+
+.trackPluginList:not(.draggable), .trackSendList:not(.draggable) {
+    flex: 1 3 50px;
+}
+
+.trackPluginListItem, .trackSendListItem {
+    width: 100%;
+    height: 30px;
+    cursor: pointer;
+    margin-bottom: 2px;
+    padding: 0 2px;
+    border-radius: 3px;
+}
+
+.trackPluginList.draggable .trackPluginListItem, .trackSendList.draggable .trackSendListItem {
+    display: inline-block;
+}
+
+.trackPluginListItem .nameLabel, .trackSendListItem .nameLabel {
+    padding: 0 1px;
+}
+
+.trackPluginList.draggable .nameLabel, .trackSendList.draggable .nameLabel {
+    display: inline-block;
+    width: calc(100% - 40px);
+}
+
+.trackPluginList.draggable .dragHandle, .trackSendList.draggable .dragHandle {
+    width: 30px;
+    height: 29px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 18px;
+    display: inline-block;
+    margin-left: 5px;
+    padding-top: 1px;
+    position: absolute;
+}
+
+.extendedListHeader {
+    width: 100%;
+    height: 35px;
+    background: rgb(60, 60, 60);
+    border-radius: 3px 3px 0 0;
+}
+
+.extendedListName {
+    display: inline-block;
+    font-size: 13px;
+    margin-left: 20px;
+    padding-top: 10px;
+    color: #FFFFFF;
+}
+
+.extendedListHeader .addButton {
+    display: inline-block;
+    float: right;
+    margin-right: 5px;
+    margin-top: 3px;
+}
+
+.extendedListHeader button {
+    background: none;
+    border: none;
+    font-size: 15px;
+    width: 40px;
+}
+
+.extendedListHeader button:active {
+    background-color: rgb(70, 70, 70);
+}
+
+.trackMuteButton.active {
+    background-color: rgb(225, 37, 37);
+}
+
+.trackSoloButton.active {
+    background-color: rgb(240, 226, 35);
+    color: #000000;
+}
+
+.trackMuteButton, .trackSoloButton {
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.trackPanner {
+    width: 100%;
+    margin-top: 5px;
+    height: 25px;
+}
+
+.gainSlider {
+    display: block;
+    width: calc(100% - 10px);
+    margin-left: 5px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.gainSlider .slider {
+    width: 30px;
+    margin-left: 3px;
+}
+
+.gainSlider .sliderTrail {
+    display: block;
+    width: 2px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: rgba(100, 100, 100, 0.5);
+}
+
+.gainSlider .sliderHandle {
+    position: absolute;
+    cursor: pointer;
+    height: 40px;
+}
+
+.gainSlider .verticalDbScale {
+    position: absolute;
+    right: 0;
+    height: 100%;
+}
+
+.track .gainSlider {
+    height: 200px;
+}
+
+.trackLevelIndicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 36px;
+    height: 100%;
+}
+
+.trackDetail {
+    height: calc(100% - 5px);
+    margin-top: 5px;
+    flex: 0 0 250px;
+    max-width: 55vw;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 3px 0 0 3px;
+    margin-left: 5px;
+}
+
+.trackNameLabel {
+    width: 100%;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.trackDetail .trackIOColorButtons {
+    width: 100%;
+}
+
+.trackDetail .trackNameLabel input, .trackSendNameLabel input {
+    font-weight: bold;
+}
+
+.trackDetail .trackNameLabel .nameLabel, .trackSendDetail .trackSendNameLabel .nameLabel {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.trackDetail .trackNameLabel .nameLabel input, .trackSendDetail .trackSendNameLabel .nameLabel input {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.trackDetail .trackPluginList, .trackDetail .trackSendList {
+    border-radius: 0 0 3px 3px;
+}
+
+.trackDetail .trackPluginList .nameLabel {
+    height: 28px;
+    line-height: 28px;
+    margin-top: 2px;
+}
+
+.trackDetail .trackPluginList.draggable, .trackSendList.draggable {
+    height: calc(100% - 35px);
+    position: absolute;
+}
+
+.trackDetail .trackPluginListWrapper, .trackDetail .trackSendListWrapper {
+    margin-top: 10px;
+    flex: 1 3 180px;
+    position: relative;
+}
+
+.trackDetail .trackMuteButton {
+    margin-top: 10px;
+    width: 80px;
+    flex: 0 2 30px;
+}
+
+.trackDetail .trackSoloButton {
+    width: 80px;
+    flex: 0 2 30px;
+}
+
+.trackDetail .trackPanner {
+    flex: 0 2 30px;
+    width: 80px;
+}
+
+.trackDetail .trackGainSlider {
+    width: 70px;
+    flex: 3 4 250px;
+}
+
+.pluginTypeList {
+    width: 300px;
+}
+
+.sendTypeList {
+    width: 300px;
+}
+
+.pluginTypeListItem, .sendTypeListItem {
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+}
+
+.trackDetail .trackColorSelector {
+    display: inline-block;
+    width: calc(33% + 8px);
+    margin: 10px 0 0 2px;
+}
+
+.trackDetail .trackColorSelector button {
+    width: 100%;
+}
+
+.colorList {
+    width: 200px;
+}
+
+.colorListItem {
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.trackDetail .inputSelectButton {
+    width: calc(33% - 5px);
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.trackDetail .outputSelectButton {
+    width: calc(33% - 5px);
+    float: right;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.trackDetail .inputSelectButton button, .trackDetail .outputSelectButton button {
+    width: 100%;
+}
+
+.ioNodeList {
+    width: 120px;
+}
+
+.ioNodeList .ioNodeListItem {
+    margin: 2px 1px;
+    border: none;
+    width: calc(100% - 2px);
+    color: #1A1A1A;
+    text-align: center;
+    line-height: 35px;
+    height: 35px;
+    border-radius: 3px;
+}
+
+.trackSendDetail {
+    width: 200px;
+    height: 385px;
+    padding: 10px;
+}
+
+.trackSendDetail .trackSendPanner {
+    height: 30px;
+    width: 80px;
+    margin: 10px auto 0 auto;
+}
+
+.trackSendDetail .gainSlider {
+    width: 80px;
+    margin: 10px 0 4px 71px;
+    height: 240px;
+}
+
+.trackSendDetail .gainSlider .sliderHandle {
+    opacity: 1;
+    height: 40px;
+}
+
+.trackSendDetail .gainSlider .sliderTrail {
+    background-color: rgb(70, 70, 70);
+}
+
+.trackSendDetail .audioSourcePositionSelect {
+    height: 30px;
+    margin-top: 10px;
+    background: rgb(33, 33,33);
+    color: #ffffff;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.trackSendDetail .audioSourcePositionList {
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+    background: rgb(33, 33,33);
+    height: 240px;
+    border-radius: 3px;
+    box-shadow: 0 2px 3px 1px rgb(90, 90, 90);
+    margin-top: 2px;
+}
+
+.trackSendDetail .audioSourcePositionList .buttonList {
+    padding: 2px;
+}
+
+.trackSendDetail .audioSourcePositionList .buttonListItem {
+    height: 40px;
+    line-height: 40px;
+}
+
+.pluginLoadingError {
+    padding: 30px 130px;
+    text-align: center;
+}
+
+.modalManager {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.modalContainer {
+    background: rgb(33, 33, 33);
+    box-shadow: 0 0 3px 3px rgb(10, 10, 10);
+    border: 2px solid rgb(40, 40, 40);
+    display: inline-block;
+    border-radius: 4px;
+    position: absolute;
+    z-index: 300;
+}
+
+.loadingScreen {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 500;
+    background: rgba(33, 33, 33, 0.6);
+}
+
+.loadingScreen .loadingSpinner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 2px;
+}
+
+.connecting .loadingScreen {
+    display: block;
+}
+
+.loginForm {
+    position: relative;
+    width: 300px;
+    max-width: 90%;
+    margin: 100px auto;
+}
+
+.loginForm h1 {
+    text-align: center;
+    color: #555555;
+}
+
+.loginForm input {
+    display: block;
+}
+
+.loginForm input[type=password] {
+    width: 100%;
+    margin-bottom: 10px;
+    line-height: 20px;
+    padding: 5px 3px;
+    text-align: center;
+    border-radius: 3px;
+    border: 2px solid transparent;
+    background-color: #FFFFFF;
+}
+
+.contextMenuList .scrollableWrapper:empty:before {
+    content: "Empty";
+    text-align: center;
+    color: #CCCCCC;
+    line-height: 34px;
+    display: block;
+    width: 100%;
+}
+
+.loginForm input[type=password]:focus {
+    border: 2px solid #7AD975;
+}
+
+.loginForm input[type=submit] {
+    width: 80px;
+    height: 40px;
+    margin: 20px auto 0 auto;
+}
+
+.pagDefaultView {
+    max-width: 640px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: black;
+    background: rgb(33, 33, 33);
+}
+
+.pagPlugin .pagPluginTopBar {
+    background-color: rgb(33, 33, 33);
+    color: #FFFFFF;
+    min-height: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+}
+
+.pagPlugin .pagPluginTopBar .pagPluginName {
+    flex: 10 1 350px;
+}
+
+.pagPlugin .pagPluginTopBar .nameLabel {
+    line-height: 38px;
+    height: 38px;
+    font-size: 16px;
+}
+
+.pagPlugin .pagPluginTopBar .nameLabel input {
+    font-size: 16px;
+}
+
+.pagPlugin .pagPluginTopBar .pagPluginCloseButton {
+    line-height: 30px;
+    display: inline-block;
+    right: 5px;
+    top: 0;
+    position: absolute;
+    cursor: pointer;
+    font-size: 16px;
+    width: 30px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.pagPlugin .pagPluginTopBar .pagPluginCloseButton line {
+    stroke: rgb(225, 37, 37);
+}
+
+.pagPlugin .pagPluginTopBar .pagPluginCloseButton:active {
+    background-color: rgb(225, 37, 37);
+}
+
+.pagPlugin .pagPluginTopBar .pagPluginCloseButton:active line {
+    stroke: rgb(33, 33, 33);
+}
+
+.pagPlugin .pagPluginTopBar .pagPluginControlButtons {
+    display: inline-flex;
+    flex: 0 0 220px;
+    flex-flow: row nowrap;
+    height: 40px;
+    margin: 0 auto;
+}
+
+.pagPlugin .pagPluginTopBar .pagPluginActiveButton {
+    flex: 1;
+    height: 30px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.pagPlugin .pagPluginTopBar .pagPluginActiveButton.active {
+    background-color: #1FBA46;
+    color: #000000;
+}
+
+.pagPlugin .pagPluginTopBar .pagPluginBypassButton {
+    margin-top: 5px;
+    flex: 1;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.pagPlugin .pagPluginTopBar .pagPluginBypassButton.active {
+    background-color: rgb(225, 37, 37);
+}
+
+.pagDefaultParameterContainer {
+    width: 100px;
+    border: 1px solid rgb(66, 66, 66);
+    background-color: #CCCCCC;
+    border-radius: 3px;
+    margin: 2px;
+    height: 105px;
+}
+
+.pagDefaultParameterContainer .pagDefaultParameterNameContainer {
+    margin-top: 5px;
+    height: 20px;
+    text-align: center;
+    margin-bottom: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 0 2px;
+}
+
+.pagDefaultParameterContainer .pagDefaultParameterControlContainer {
+    text-align: center;
+}
+
+.pagDefaultParameterControl {
+    display: inline-block;
+}
+
+.pagDefaultParameterContainer .pagDefaultParameterValueContainer {
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 20px;
+    font-size: 15px;
+}
+
+.parameterControlButton {
+    text-align: center;
+    cursor: pointer;
+}

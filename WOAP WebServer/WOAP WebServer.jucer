@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="t5dCk4" name="WOAP WebServer" displaySplashScreen="0" reportAppUsage="0"
+              splashScreenColour="Dark" projectType="consoleapp" version="1.0.0"
+              bundleIdentifier="me.zonrobin.WOAP_WebServer" includeBinaryInAppConfig="1"
+              cppLanguageStandard="14" companyCopyright="Robin Zon" jucerVersion="5.2.0"
+              headerPath="../Mongoose" companyName="Robin Zon" companyWebsite="zonrobin.me"
+              companyEmail="mail@zonrobin.me">
+  <MAINGROUP id="tT7uNl" name="WOAP WebServer">
+    <GROUP id="{FBE7BF2B-B748-ECD9-9F31-D98B5C54CCBE}" name="Source">
+      <FILE id="CbZ77Y" name="icon.png" compile="0" resource="1" file="icon.png"/>
+      <FILE id="Zsbqjo" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+      <FILE id="YCnNTS" name="mongoose.c" compile="1" resource="0" file="Source/mongoose.c"/>
+      <FILE id="EX9Byr" name="mongoose.h" compile="0" resource="0" file="Source/mongoose.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <VS2017 targetFolder="Builds/VisualStudio2017" windowsTargetPlatformVersion="10.0.16299.0"
+            externalLibraries="" smallIcon="CbZ77Y" bigIcon="CbZ77Y">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" winWarningLevel="4" generateManifest="1" winArchitecture="Win32"
+                       debugInformationFormat="ProgramDatabase" enablePluginBinaryCopyStep="0"
+                       linkTimeOptimisation="0" isDebug="1" optimisation="1" targetName="WOAP WebServer"/>
+        <CONFIGURATION name="Release" winWarningLevel="4" generateManifest="1" winArchitecture="Win32"
+                       debugInformationFormat="ProgramDatabase" enablePluginBinaryCopyStep="0"
+                       linkTimeOptimisation="1" isDebug="0" optimisation="3" targetName="WOAP WebServer"
+                       useRuntimeLibDLL="0"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2017>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+  </MODULES>
+  <JUCEOPTIONS/>
+</JUCERPROJECT>

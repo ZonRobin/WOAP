@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="FcDOiy" name="WOAP PAG Generator" displaySplashScreen="0"
+              reportAppUsage="0" splashScreenColour="Dark" projectType="guiapp"
+              version="1.0.0" bundleIdentifier="me.zonrobin.WOAP_PAG_Generator"
+              includeBinaryInAppConfig="1" cppLanguageStandard="14" companyCopyright="Robin Zon"
+              jucerVersion="5.2.0" companyName="Robin Zon" companyWebsite="zonrobin.me"
+              companyEmail="mail@zonrobin.me">
+  <MAINGROUP id="eulHpb" name="WOAP PAG Generator">
+    <GROUP id="{026648CB-FDC8-B645-81FC-E9EA502B3184}" name="Source">
+      <FILE id="BNPaB2" name="icon.png" compile="0" resource="1" file="icon.png"/>
+      <FILE id="knj6J4" name="woap_blank_ellipse.cpp" compile="1" resource="0"
+            file="Source/woap_blank_ellipse.cpp"/>
+      <FILE id="V0GMrV" name="woap_blank_ellipse.h" compile="0" resource="0"
+            file="Source/woap_blank_ellipse.h"/>
+      <FILE id="JIB5yR" name="woap_blank_rectangle.cpp" compile="1" resource="0"
+            file="Source/woap_blank_rectangle.cpp"/>
+      <FILE id="bXDbLc" name="woap_blank_rectangle.h" compile="0" resource="0"
+            file="Source/woap_blank_rectangle.h"/>
+      <FILE id="gnVcmF" name="woap_colour_input.cpp" compile="1" resource="0"
+            file="Source/woap_colour_input.cpp"/>
+      <FILE id="M84fJG" name="woap_colour_input.h" compile="0" resource="0"
+            file="Source/woap_colour_input.h"/>
+      <FILE id="Zipp9P" name="woap_colour_picker.cpp" compile="1" resource="0"
+            file="Source/woap_colour_picker.cpp"/>
+      <FILE id="fPPSGq" name="woap_colour_picker.h" compile="0" resource="0"
+            file="Source/woap_colour_picker.h"/>
+      <FILE id="VfKo8R" name="woap_colour_scheme.h" compile="0" resource="0"
+            file="Source/woap_colour_scheme.h"/>
+      <FILE id="GQzNvN" name="woap_component_visibilitor.cpp" compile="1"
+            resource="0" file="Source/woap_component_visibilitor.cpp"/>
+      <FILE id="pgogBZ" name="woap_component_visibilitor.h" compile="0" resource="0"
+            file="Source/woap_component_visibilitor.h"/>
+      <FILE id="JzkWQ0" name="woap_elements_toolbar.cpp" compile="1" resource="0"
+            file="Source/woap_elements_toolbar.cpp"/>
+      <FILE id="quvvJZ" name="woap_elements_toolbar.h" compile="0" resource="0"
+            file="Source/woap_elements_toolbar.h"/>
+      <FILE id="VrpIGH" name="woap_entity_manager.cpp" compile="1" resource="0"
+            file="Source/woap_entity_manager.cpp"/>
+      <FILE id="k5JqyO" name="woap_entity_manager.h" compile="0" resource="0"
+            file="Source/woap_entity_manager.h"/>
+      <FILE id="kXDh2f" name="woap_functions.cpp" compile="1" resource="0"
+            file="Source/woap_functions.cpp"/>
+      <FILE id="SCFTi4" name="woap_functions.h" compile="0" resource="0"
+            file="Source/woap_functions.h"/>
+      <FILE id="kRGTsL" name="woap_help_box.cpp" compile="1" resource="0"
+            file="Source/woap_help_box.cpp"/>
+      <FILE id="h5Gmdh" name="woap_help_box.h" compile="0" resource="0" file="Source/woap_help_box.h"/>
+      <FILE id="CzGWmC" name="woap_loading_screen_component.cpp" compile="1"
+            resource="0" file="Source/woap_loading_screen_component.cpp"/>
+      <FILE id="nat3Mo" name="woap_loading_screen_component.h" compile="0"
+            resource="0" file="Source/woap_loading_screen_component.h"/>
+      <FILE id="GbL5as" name="woap_look_and_feel.cpp" compile="1" resource="0"
+            file="Source/woap_look_and_feel.cpp"/>
+      <FILE id="o4o0cj" name="woap_look_and_feel.h" compile="0" resource="0"
+            file="Source/woap_look_and_feel.h"/>
+      <FILE id="iA6T9H" name="woap_main.cpp" compile="1" resource="0" file="Source/woap_main.cpp"/>
+      <FILE id="PthNpn" name="woap_main.h" compile="0" resource="0" file="Source/woap_main.h"/>
+      <FILE id="i3dJMZ" name="woap_main_component.cpp" compile="1" resource="0"
+            file="Source/woap_main_component.cpp"/>
+      <FILE id="Kyu9Vl" name="woap_main_component.h" compile="0" resource="0"
+            file="Source/woap_main_component.h"/>
+      <FILE id="tNd3ZD" name="woap_parameter_automizer.cpp" compile="1" resource="0"
+            file="Source/woap_parameter_automizer.cpp"/>
+      <FILE id="wAV7XE" name="woap_parameter_automizer.h" compile="0" resource="0"
+            file="Source/woap_parameter_automizer.h"/>
+      <FILE id="grrN16" name="woap_parameter_control.cpp" compile="1" resource="0"
+            file="Source/woap_parameter_control.cpp"/>
+      <FILE id="ZeDkHC" name="woap_parameter_control.h" compile="0" resource="0"
+            file="Source/woap_parameter_control.h"/>
+      <FILE id="nfxEMW" name="woap_parameter_control_button.cpp" compile="1"
+            resource="0" file="Source/woap_parameter_control_button.cpp"/>
+      <FILE id="jLbaoC" name="woap_parameter_control_button.h" compile="0"
+            resource="0" file="Source/woap_parameter_control_button.h"/>
+      <FILE id="WQDTLG" name="woap_parameter_control_linear_slider.cpp" compile="1"
+            resource="0" file="Source/woap_parameter_control_linear_slider.cpp"/>
+      <FILE id="Pfp3r5" name="woap_parameter_control_linear_slider.h" compile="0"
+            resource="0" file="Source/woap_parameter_control_linear_slider.h"/>
+      <FILE id="HcCvZn" name="woap_parameter_control_rotary_slider.cpp" compile="1"
+            resource="0" file="Source/woap_parameter_control_rotary_slider.cpp"/>
+      <FILE id="OYkgQb" name="woap_parameter_control_rotary_slider.h" compile="0"
+            resource="0" file="Source/woap_parameter_control_rotary_slider.h"/>
+      <FILE id="ERDVrL" name="woap_exceptions.h" compile="0" resource="0"
+            file="Source/woap_exceptions.h"/>
+      <FILE id="fuq6Vz" name="woap_plugin_parameter.cpp" compile="1" resource="0"
+            file="Source/woap_plugin_parameter.cpp"/>
+      <FILE id="dXjr6o" name="woap_plugin_parameter.h" compile="0" resource="0"
+            file="Source/woap_plugin_parameter.h"/>
+      <FILE id="bOjovU" name="woap_plugin_parameter_toolbar.cpp" compile="1"
+            resource="0" file="Source/woap_plugin_parameter_toolbar.cpp"/>
+      <FILE id="eHOeYJ" name="woap_plugin_parameter_toolbar.h" compile="0"
+            resource="0" file="Source/woap_plugin_parameter_toolbar.h"/>
+      <FILE id="Bh7PTR" name="woap_view_editor.cpp" compile="1" resource="0"
+            file="Source/woap_view_editor.cpp"/>
+      <FILE id="Yed47a" name="woap_view_editor.h" compile="0" resource="0"
+            file="Source/woap_view_editor.h"/>
+      <FILE id="fTW8Ba" name="woap_view_editor_element.cpp" compile="1" resource="0"
+            file="Source/woap_view_editor_element.cpp"/>
+      <FILE id="Mkz2vL" name="woap_view_editor_element.h" compile="0" resource="0"
+            file="Source/woap_view_editor_element.h"/>
+      <FILE id="A3nqIN" name="woap_view_editor_node.cpp" compile="1" resource="0"
+            file="Source/woap_view_editor_node.cpp"/>
+      <FILE id="jEld8F" name="woap_view_editor_node.h" compile="0" resource="0"
+            file="Source/woap_view_editor_node.h"/>
+      <FILE id="MWcVPi" name="woap_view_toolbar.cpp" compile="1" resource="0"
+            file="Source/woap_view_toolbar.cpp"/>
+      <FILE id="BP2QDy" name="woap_view_toolbar.h" compile="0" resource="0"
+            file="Source/woap_view_toolbar.h"/>
+      <FILE id="VMuKEo" name="woap_window.cpp" compile="1" resource="0" file="Source/woap_window.cpp"/>
+      <FILE id="yWhFey" name="woap_window.h" compile="0" resource="0" file="Source/woap_window.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <VS2017 targetFolder="Builds/VisualStudio2017" windowsTargetPlatformVersion="10.0.16299.0"
+            vst3Folder="../VST3 SDK" smallIcon="BNPaB2" bigIcon="BNPaB2">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" winWarningLevel="4" generateManifest="1" winArchitecture="Win32"
+                       debugInformationFormat="ProgramDatabase" enablePluginBinaryCopyStep="0"
+                       linkTimeOptimisation="0" isDebug="1" optimisation="1" targetName="WOAP PAG Generator"/>
+        <CONFIGURATION name="Release" winWarningLevel="4" generateManifest="1" winArchitecture="Win32"
+                       debugInformationFormat="ProgramDatabase" enablePluginBinaryCopyStep="0"
+                       linkTimeOptimisation="1" isDebug="0" optimisation="3" targetName="WOAP PAG Generator"
+                       useRuntimeLibDLL="0"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2017>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+  </MODULES>
+  <JUCEOPTIONS JUCE_PLUGINHOST_VST="enabled" JUCE_PLUGINHOST_VST3="enabled"/>
+</JUCERPROJECT>

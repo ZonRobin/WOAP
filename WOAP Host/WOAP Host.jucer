@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="n3TQ9C" name="WOAP Host" projectType="guiapp" version="1.0.0"
+              bundleIdentifier="me.zonrobin.WOAP_Host" includeBinaryInAppConfig="1"
+              jucerVersion="5.2.0" companyName="Robin Zon" companyWebsite="zonrobin.me"
+              companyEmail="mail@zonrobin.me" displaySplashScreen="0" reportAppUsage="0"
+              splashScreenColour="Dark" cppLanguageStandard="14" companyCopyright="Robin Zon"
+              headerPath="..\..\..\ASIO">
+  <MAINGROUP id="NWurS4" name="WOAP Host">
+    <GROUP id="{D385C832-4136-235D-2855-C3C21413B039}" name="Source">
+      <GROUP id="{33D6E488-01F5-624C-F551-315D57D55D1B}" name="API">
+        <FILE id="edpgn2" name="woap_api_consumer.cpp" compile="1" resource="0"
+              file="Source/woap_api_consumer.cpp"/>
+        <FILE id="Gq46w4" name="woap_api_consumer.h" compile="0" resource="0"
+              file="Source/woap_api_consumer.h"/>
+        <GROUP id="{406ACDC8-BB78-CD0A-199E-9C84F744E6A0}" name="Messages">
+          <FILE id="X4R5xm" name="woap_api_messages_solo_bus.h" compile="0" resource="0"
+                file="Source/woap_api_messages_solo_bus.h"/>
+          <FILE id="tQQDLD" name="woap_api_messages_state_manager.h" compile="0"
+                resource="0" file="Source/woap_api_messages_state_manager.h"/>
+          <FILE id="Ab9vLD" name="woap_api_messages_plugin_manager.h" compile="0"
+                resource="0" file="Source/woap_api_messages_plugin_manager.h"/>
+          <FILE id="zbeueq" name="woap_api_messages_track_send_node.h" compile="0"
+                resource="0" file="Source/woap_api_messages_track_send_node.h"/>
+          <FILE id="ptc0AN" name="woap_api_messages_validatable_osc_message_with_id.h"
+                compile="0" resource="0" file="Source/woap_api_messages_validatable_osc_message_with_id.h"/>
+          <FILE id="UEQbju" name="woap_api_messages_plugin.h" compile="0" resource="0"
+                file="Source/woap_api_messages_plugin.h"/>
+          <FILE id="HP8LiF" name="woap_api_messages_validatable_osc_message.h"
+                compile="0" resource="0" file="Source/woap_api_messages_validatable_osc_message.h"/>
+          <FILE id="fmXwuN" name="woap_api_messages_parameter_message.h" compile="0"
+                resource="0" file="Source/woap_api_messages_parameter_message.h"/>
+          <FILE id="rgtc7L" name="woap_api_messages_api_core.h" compile="0" resource="0"
+                file="Source/woap_api_messages_api_core.h"/>
+          <FILE id="d6NqkL" name="woap_api_messages_audio_core.h" compile="0"
+                resource="0" file="Source/woap_api_messages_audio_core.h"/>
+          <FILE id="vqFrIm" name="woap_api_messages_track.h" compile="0" resource="0"
+                file="Source/woap_api_messages_track.h"/>
+        </GROUP>
+        <GROUP id="{98605AFC-6A5D-3291-9B0A-14A7446F3B8E}" name="ListenerBridges">
+          <FILE id="z5YMzZ" name="woap_api_listener_bridges_plugin_manager_listener_bridge.cpp"
+                compile="1" resource="0" file="Source/woap_api_listener_bridges_plugin_manager_listener_bridge.cpp"/>
+          <FILE id="ZEEXms" name="woap_api_listener_bridges_plugin_manager_listener_bridge.h"
+                compile="0" resource="0" file="Source/woap_api_listener_bridges_plugin_manager_listener_bridge.h"/>
+          <FILE id="ngGAvE" name="woap_api_listener_bridges_track_send_node_listener_bridge.cpp"
+                compile="1" resource="0" file="Source/woap_api_listener_bridges_track_send_node_listener_bridge.cpp"/>
+          <FILE id="HPaGHJ" name="woap_api_listener_bridges_track_send_node_listener_bridge.h"
+                compile="0" resource="0" file="Source/woap_api_listener_bridges_track_send_node_listener_bridge.h"/>
+          <FILE id="YSPaoB" name="woap_api_listener_bridges_plugin_listener_bridge.cpp"
+                compile="1" resource="0" file="Source/woap_api_listener_bridges_plugin_listener_bridge.cpp"/>
+          <FILE id="WfsFo3" name="woap_api_listener_bridges_plugin_listener_bridge.h"
+                compile="0" resource="0" file="Source/woap_api_listener_bridges_plugin_listener_bridge.h"/>
+          <FILE id="M8SsO1" name="woap_api_listener_brides_osc_bridge_base.h"
+                compile="0" resource="0" file="Source/woap_api_listener_brides_osc_bridge_base.h"/>
+          <FILE id="gNQGI9" name="woap_api_listener_bridges_base.h" compile="0"
+                resource="0" file="Source/woap_api_listener_bridges_base.h"/>
+          <FILE id="pwvcCG" name="woap_api_listener_bridges_audio_core_listener_bridge.cpp"
+                compile="1" resource="0" file="Source/woap_api_listener_bridges_audio_core_listener_bridge.cpp"/>
+          <FILE id="Accp0e" name="woap_api_listener_bridges_audio_core_listener_bridge.h"
+                compile="0" resource="0" file="Source/woap_api_listener_bridges_audio_core_listener_bridge.h"/>
+          <FILE id="utc3Fr" name="woap_api_listener_bridges_track_listener_bridge.cpp"
+                compile="1" resource="0" file="Source/woap_api_listener_bridges_track_listener_bridge.cpp"/>
+          <FILE id="WQpdsC" name="woap_api_listener_bridges_track_listener_bridge.h"
+                compile="0" resource="0" file="Source/woap_api_listener_bridges_track_listener_bridge.h"/>
+        </GROUP>
+        <GROUP id="{1072B2DA-EB36-002F-740B-09809831CDC8}" name="OSC">
+          <FILE id="uMDbpM" name="woap_api_osc_input_stream.h" compile="0" resource="0"
+                file="Source/woap_api_osc_input_stream.h"/>
+          <FILE id="XwVRvU" name="woap_api_osc_message_receiver.h" compile="0"
+                resource="0" file="Source/woap_api_osc_message_receiver.h"/>
+          <FILE id="vRRx8I" name="woap_api_osc_listener_library.cpp" compile="1"
+                resource="0" file="Source/woap_api_osc_listener_library.cpp"/>
+          <FILE id="JtaTfg" name="woap_api_osc_listener_library.h" compile="0"
+                resource="0" file="Source/woap_api_osc_listener_library.h"/>
+          <FILE id="TsB3qO" name="woap_api_osc_output_stream.h" compile="0" resource="0"
+                file="Source/woap_api_osc_output_stream.h"/>
+          <FILE id="Lexd8E" name="woap_api_osc_remote_client.cpp" compile="1"
+                resource="0" file="Source/woap_api_osc_remote_client.cpp"/>
+          <FILE id="XH8MO3" name="woap_api_osc_remote_client.h" compile="0" resource="0"
+                file="Source/woap_api_osc_remote_client.h"/>
+        </GROUP>
+        <FILE id="v9trUr" name="woap_api_core.cpp" compile="1" resource="0"
+              file="Source/woap_api_core.cpp"/>
+        <FILE id="UALvew" name="woap_api_core.h" compile="0" resource="0" file="Source/woap_api_core.h"/>
+        <FILE id="keHUbe" name="woap_api_imessage.h" compile="0" resource="0"
+              file="Source/woap_api_imessage.h"/>
+      </GROUP>
+      <GROUP id="{3B50A6B7-03BB-A653-AD34-2B7568B17036}" name="Components">
+        <FILE id="Wu9X18" name="woap_loading_spinner.cpp" compile="1" resource="0"
+              file="Source/woap_loading_spinner.cpp"/>
+        <FILE id="yhUVOB" name="woap_loading_spinner.h" compile="0" resource="0"
+              file="Source/woap_loading_spinner.h"/>
+        <FILE id="k2roRM" name="woap_configuration_editor.cpp" compile="1"
+              resource="0" file="Source/woap_configuration_editor.cpp"/>
+        <FILE id="h43P2n" name="woap_configuration_editor.h" compile="0" resource="0"
+              file="Source/woap_configuration_editor.h"/>
+        <FILE id="buOgD4" name="woap_icon_button.cpp" compile="1" resource="0"
+              file="Source/woap_icon_button.cpp"/>
+        <FILE id="aDvca5" name="woap_icon_button.h" compile="0" resource="0"
+              file="Source/woap_icon_button.h"/>
+        <FILE id="gbjss7" name="woap_button_list.cpp" compile="1" resource="0"
+              file="Source/woap_button_list.cpp"/>
+        <FILE id="vwFnFQ" name="woap_button_list.h" compile="0" resource="0"
+              file="Source/woap_button_list.h"/>
+        <FILE id="OheLkc" name="woap_simple_call_out_box.h" compile="0" resource="0"
+              file="Source/woap_simple_call_out_box.h"/>
+        <FILE id="bvngNQ" name="woap_solo_bus_settings_component.cpp" compile="1"
+              resource="0" file="Source/woap_solo_bus_settings_component.cpp"/>
+        <FILE id="czHaeU" name="woap_solo_bus_settings_component.h" compile="0"
+              resource="0" file="Source/woap_solo_bus_settings_component.h"/>
+        <FILE id="IS2er4" name="woap_drag_handle.cpp" compile="1" resource="0"
+              file="Source/woap_drag_handle.cpp"/>
+        <FILE id="o2lIvZ" name="woap_drag_handle.h" compile="0" resource="0"
+              file="Source/woap_drag_handle.h"/>
+        <FILE id="ZKEtpx" name="woap_colour_palette.cpp" compile="1" resource="0"
+              file="Source/woap_colour_palette.cpp"/>
+        <FILE id="ICagI3" name="woap_colour_palette.h" compile="0" resource="0"
+              file="Source/woap_colour_palette.h"/>
+        <FILE id="QKujx0" name="woap_flex_list.h" compile="0" resource="0"
+              file="Source/woap_flex_list.h"/>
+        <FILE id="Fe02WR" name="woap_gain_fader.cpp" compile="1" resource="0"
+              file="Source/woap_gain_fader.cpp"/>
+        <FILE id="vhoqvY" name="woap_gain_fader.h" compile="0" resource="0"
+              file="Source/woap_gain_fader.h"/>
+        <FILE id="Ji1NeG" name="woap_level_indicator.cpp" compile="1" resource="0"
+              file="Source/woap_level_indicator.cpp"/>
+        <FILE id="E8wGWC" name="woap_level_indicator.h" compile="0" resource="0"
+              file="Source/woap_level_indicator.h"/>
+        <FILE id="tdLLFP" name="woap_mixer_node_selector.cpp" compile="1" resource="0"
+              file="Source/woap_mixer_node_selector.cpp"/>
+        <FILE id="l9Mhxl" name="woap_mixer_node_selector.h" compile="0" resource="0"
+              file="Source/woap_mixer_node_selector.h"/>
+        <FILE id="hr3hHz" name="woap_panner.cpp" compile="1" resource="0" file="Source/woap_panner.cpp"/>
+        <FILE id="Tc2xBV" name="woap_panner.h" compile="0" resource="0" file="Source/woap_panner.h"/>
+        <FILE id="jXY0nk" name="woap_thrash_button.cpp" compile="1" resource="0"
+              file="Source/woap_thrash_button.cpp"/>
+        <FILE id="iD2oF9" name="woap_thrash_button.h" compile="0" resource="0"
+              file="Source/woap_thrash_button.h"/>
+        <FILE id="eUQovP" name="woap_track_colour_selector.cpp" compile="1"
+              resource="0" file="Source/woap_track_colour_selector.cpp"/>
+        <FILE id="PXqDcA" name="woap_track_colour_selector.h" compile="0" resource="0"
+              file="Source/woap_track_colour_selector.h"/>
+        <FILE id="OWIySw" name="woap_vertical_db_scale.cpp" compile="1" resource="0"
+              file="Source/woap_vertical_db_scale.cpp"/>
+        <FILE id="FYWJXg" name="woap_vertical_db_scale.h" compile="0" resource="0"
+              file="Source/woap_vertical_db_scale.h"/>
+      </GROUP>
+      <GROUP id="{F57254F3-C1CF-88B0-0392-2E04D589B7BA}" name="Helpers">
+        <FILE id="YMy08y" name="woap_password_helper.h" compile="0" resource="0"
+              file="Source/woap_password_helper.h"/>
+      </GROUP>
+      <GROUP id="{9EE51D98-E187-400A-39EB-129F5C32BE82}" name="Parameters">
+        <FILE id="RvizKe" name="woap_parameter.cpp" compile="1" resource="0"
+              file="Source/woap_parameter.cpp"/>
+        <FILE id="ve4aNt" name="woap_parameter.h" compile="0" resource="0"
+              file="Source/woap_parameter.h"/>
+        <FILE id="jY301E" name="woap_parameter_bool.cpp" compile="1" resource="0"
+              file="Source/woap_parameter_bool.cpp"/>
+        <FILE id="tinAwL" name="woap_parameter_bool.h" compile="0" resource="0"
+              file="Source/woap_parameter_bool.h"/>
+        <FILE id="gC6VJ0" name="woap_parameter_choice.cpp" compile="1" resource="0"
+              file="Source/woap_parameter_choice.cpp"/>
+        <FILE id="Drke3K" name="woap_parameter_choice.h" compile="0" resource="0"
+              file="Source/woap_parameter_choice.h"/>
+        <FILE id="ZDKQNq" name="woap_parameter_float.cpp" compile="1" resource="0"
+              file="Source/woap_parameter_float.cpp"/>
+        <FILE id="Woezdk" name="woap_parameter_float.h" compile="0" resource="0"
+              file="Source/woap_parameter_float.h"/>
+        <FILE id="dJ0LLd" name="woap_parameter_int.cpp" compile="1" resource="0"
+              file="Source/woap_parameter_int.cpp"/>
+        <FILE id="l6MqFR" name="woap_parameter_int.h" compile="0" resource="0"
+              file="Source/woap_parameter_int.h"/>
+      </GROUP>
+      <GROUP id="{68BECDFC-C8BC-1499-59A9-D65E831493CB}" name="Sockets">
+        <FILE id="MlQhYr" name="woap_sockets_connection_info.cpp" compile="1"
+              resource="0" file="Source/woap_sockets_connection_info.cpp"/>
+        <FILE id="Xzz2sX" name="woap_sockets_connection_info.h" compile="0"
+              resource="0" file="Source/woap_sockets_connection_info.h"/>
+        <FILE id="gDe1hV" name="woap_sockets_datagram_socket.cpp" compile="1"
+              resource="0" file="Source/woap_sockets_datagram_socket.cpp"/>
+        <FILE id="d4kNgW" name="woap_sockets_datagram_socket.h" compile="0"
+              resource="0" file="Source/woap_sockets_datagram_socket.h"/>
+        <FILE id="dDki8D" name="woap_sockets_message.cpp" compile="1" resource="0"
+              file="Source/woap_sockets_message.cpp"/>
+        <FILE id="r2bLoC" name="woap_sockets_message.h" compile="0" resource="0"
+              file="Source/woap_sockets_message.h"/>
+        <FILE id="qhMm6O" name="woap_sockets_streaming_socket.cpp" compile="1"
+              resource="0" file="Source/woap_sockets_streaming_socket.cpp"/>
+        <FILE id="sCl4Mk" name="woap_sockets_streaming_socket.h" compile="0"
+              resource="0" file="Source/woap_sockets_streaming_socket.h"/>
+        <FILE id="gXG3a6" name="woap_sockets_streaming_socket_client.cpp" compile="1"
+              resource="0" file="Source/woap_sockets_streaming_socket_client.cpp"/>
+        <FILE id="jefcgw" name="woap_sockets_streaming_socket_client.h" compile="0"
+              resource="0" file="Source/woap_sockets_streaming_socket_client.h"/>
+        <FILE id="lOoI20" name="woap_sockets_streaming_socket_server.cpp" compile="1"
+              resource="0" file="Source/woap_sockets_streaming_socket_server.cpp"/>
+        <FILE id="ITdeg9" name="woap_sockets_streaming_socket_server.h" compile="0"
+              resource="0" file="Source/woap_sockets_streaming_socket_server.h"/>
+      </GROUP>
+      <GROUP id="{FB6B1701-8C34-BDA2-9967-ED3A6FCBC068}" name="Views">
+        <FILE id="NI2kkT" name="woap_name_label.cpp" compile="1" resource="0"
+              file="Source/woap_name_label.cpp"/>
+        <FILE id="Py4e73" name="woap_name_label.h" compile="0" resource="0"
+              file="Source/woap_name_label.h"/>
+        <FILE id="le1ULy" name="woap_settings_view.cpp" compile="1" resource="0"
+              file="Source/woap_settings_view.cpp"/>
+        <FILE id="XGNu74" name="woap_settings_view.h" compile="0" resource="0"
+              file="Source/woap_settings_view.h"/>
+        <FILE id="LQYs3l" name="woap_track_send_node_source_position_view.cpp"
+              compile="1" resource="0" file="Source/woap_track_send_node_source_position_view.cpp"/>
+        <FILE id="vUsYlB" name="woap_track_send_node_source_position_view.h"
+              compile="0" resource="0" file="Source/woap_track_send_node_source_position_view.h"/>
+        <FILE id="PJl0jG" name="woap_track_send_node_detail_view.cpp" compile="1"
+              resource="0" file="Source/woap_track_send_node_detail_view.cpp"/>
+        <FILE id="Dg9EVd" name="woap_track_send_node_detail_view.h" compile="0"
+              resource="0" file="Source/woap_track_send_node_detail_view.h"/>
+        <FILE id="Vt0xA9" name="woap_track_level_indicator_view.cpp" compile="1"
+              resource="0" file="Source/woap_track_level_indicator_view.cpp"/>
+        <FILE id="b0rtFs" name="woap_track_level_indicator_view.h" compile="0"
+              resource="0" file="Source/woap_track_level_indicator_view.h"/>
+        <FILE id="U0QtuG" name="woap_track_io_selector.cpp" compile="1" resource="0"
+              file="Source/woap_track_io_selector.cpp"/>
+        <FILE id="FU7a7L" name="woap_track_io_selector.h" compile="0" resource="0"
+              file="Source/woap_track_io_selector.h"/>
+        <FILE id="pzavzu" name="woap_plugin_editor_view.cpp" compile="1" resource="0"
+              file="Source/woap_plugin_editor_view.cpp"/>
+        <FILE id="gUWNnQ" name="woap_plugin_editor_view.h" compile="0" resource="0"
+              file="Source/woap_plugin_editor_view.h"/>
+        <FILE id="BWe9p8" name="woap_track_detail_view.cpp" compile="1" resource="0"
+              file="Source/woap_track_detail_view.cpp"/>
+        <FILE id="rBp6S7" name="woap_track_detail_view.h" compile="0" resource="0"
+              file="Source/woap_track_detail_view.h"/>
+        <FILE id="DAgXxP" name="woap_gain_fader_view.cpp" compile="1" resource="0"
+              file="Source/woap_gain_fader_view.cpp"/>
+        <FILE id="tapXUC" name="woap_gain_fader_view.h" compile="0" resource="0"
+              file="Source/woap_gain_fader_view.h"/>
+        <FILE id="tnL028" name="woap_track_send_list_element_view.cpp" compile="1"
+              resource="0" file="Source/woap_track_send_list_element_view.cpp"/>
+        <FILE id="CEoYVW" name="woap_track_send_list_element_view.h" compile="0"
+              resource="0" file="Source/woap_track_send_list_element_view.h"/>
+        <FILE id="Itue14" name="woap_track_send_list_view.cpp" compile="1"
+              resource="0" file="Source/woap_track_send_list_view.cpp"/>
+        <FILE id="QsXeLV" name="woap_track_send_list_view.h" compile="0" resource="0"
+              file="Source/woap_track_send_list_view.h"/>
+        <FILE id="XYk7wz" name="woap_audio_core_view.cpp" compile="1" resource="0"
+              file="Source/woap_audio_core_view.cpp"/>
+        <FILE id="u6LbWF" name="woap_audio_core_view.h" compile="0" resource="0"
+              file="Source/woap_audio_core_view.h"/>
+        <FILE id="CX4EfH" name="woap_button_view.cpp" compile="1" resource="0"
+              file="Source/woap_button_view.cpp"/>
+        <FILE id="gnYAap" name="woap_button_view.h" compile="0" resource="0"
+              file="Source/woap_button_view.h"/>
+        <FILE id="oMwedw" name="woap_main_view.cpp" compile="1" resource="0"
+              file="Source/woap_main_view.cpp"/>
+        <FILE id="P6xQQl" name="woap_main_view.h" compile="0" resource="0"
+              file="Source/woap_main_view.h"/>
+        <FILE id="gGK8sL" name="woap_mix_view.cpp" compile="1" resource="0"
+              file="Source/woap_mix_view.cpp"/>
+        <FILE id="ie6ral" name="woap_mix_view.h" compile="0" resource="0" file="Source/woap_mix_view.h"/>
+        <FILE id="uMFnWe" name="woap_pan_view.cpp" compile="1" resource="0"
+              file="Source/woap_pan_view.cpp"/>
+        <FILE id="WpAuiG" name="woap_pan_view.h" compile="0" resource="0" file="Source/woap_pan_view.h"/>
+        <FILE id="GNEP1Z" name="woap_track_plugin_list_element_view.cpp" compile="1"
+              resource="0" file="Source/woap_track_plugin_list_element_view.cpp"/>
+        <FILE id="vc6c2y" name="woap_track_plugin_list_element_view.h" compile="0"
+              resource="0" file="Source/woap_track_plugin_list_element_view.h"/>
+        <FILE id="w5h5nk" name="woap_track_plugin_list_view.cpp" compile="1"
+              resource="0" file="Source/woap_track_plugin_list_view.cpp"/>
+        <FILE id="I6byhe" name="woap_track_plugin_list_view.h" compile="0"
+              resource="0" file="Source/woap_track_plugin_list_view.h"/>
+        <FILE id="gWuBk8" name="woap_track_view.cpp" compile="1" resource="0"
+              file="Source/woap_track_view.cpp"/>
+        <FILE id="ZsHgNT" name="woap_track_view.h" compile="0" resource="0"
+              file="Source/woap_track_view.h"/>
+        <FILE id="qRMBvw" name="woap_window.cpp" compile="1" resource="0" file="Source/woap_window.cpp"/>
+        <FILE id="RVQzpY" name="woap_window.h" compile="0" resource="0" file="Source/woap_window.h"/>
+      </GROUP>
+      <FILE id="Uc9h2B" name="icon.png" compile="0" resource="1" file="icon.png"/>
+      <FILE id="PJ9Pmf" name="woap.h" compile="0" resource="0" file="Source/woap.h"/>
+      <FILE id="wt8kRD" name="woap_access_control_core.cpp" compile="1" resource="0"
+            file="Source/woap_access_control_core.cpp"/>
+      <FILE id="toPq49" name="woap_access_control_core.h" compile="0" resource="0"
+            file="Source/woap_access_control_core.h"/>
+      <FILE id="CGeoLq" name="woap_audio_buffer_extended.h" compile="0" resource="0"
+            file="Source/woap_audio_buffer_extended.h"/>
+      <FILE id="GAuUOf" name="woap_audio_clip_cache.h" compile="0" resource="0"
+            file="Source/woap_audio_clip_cache.h"/>
+      <FILE id="LE07sT" name="woap_audio_core.cpp" compile="1" resource="0"
+            file="Source/woap_audio_core.cpp"/>
+      <FILE id="SLgH2V" name="woap_audio_core.h" compile="0" resource="0"
+            file="Source/woap_audio_core.h"/>
+      <FILE id="rLsE29" name="woap_audio_core_processor.cpp" compile="1"
+            resource="0" file="Source/woap_audio_core_processor.cpp"/>
+      <FILE id="WrBaBU" name="woap_audio_core_processor.h" compile="0" resource="0"
+            file="Source/woap_audio_core_processor.h"/>
+      <FILE id="KVujAg" name="woap_audio_data_emitter.h" compile="0" resource="0"
+            file="Source/woap_audio_data_emitter.h"/>
+      <FILE id="t18cw9" name="woap_audio_input_proxy.cpp" compile="1" resource="0"
+            file="Source/woap_audio_input_proxy.cpp"/>
+      <FILE id="K1TxH4" name="woap_audio_input_proxy.h" compile="0" resource="0"
+            file="Source/woap_audio_input_proxy.h"/>
+      <FILE id="QdfnUo" name="woap_audio_output_proxy.cpp" compile="1" resource="0"
+            file="Source/woap_audio_output_proxy.cpp"/>
+      <FILE id="vOT9RS" name="woap_audio_output_proxy.h" compile="0" resource="0"
+            file="Source/woap_audio_output_proxy.h"/>
+      <FILE id="LyKyWa" name="woap_audio_processor_player_double.cpp" compile="1"
+            resource="0" file="Source/woap_audio_processor_player_double.cpp"/>
+      <FILE id="M1e2uN" name="woap_audio_processor_player_double.h" compile="0"
+            resource="0" file="Source/woap_audio_processor_player_double.h"/>
+      <FILE id="Gxa2rG" name="woap_bootstrapper.cpp" compile="1" resource="0"
+            file="Source/woap_bootstrapper.cpp"/>
+      <FILE id="PvAqXJ" name="woap_bootstrapper.h" compile="0" resource="0"
+            file="Source/woap_bootstrapper.h"/>
+      <FILE id="JMWyC4" name="woap_configuration_manager.cpp" compile="1"
+            resource="0" file="Source/woap_configuration_manager.cpp"/>
+      <FILE id="XQNZDK" name="woap_configuration_manager.h" compile="0" resource="0"
+            file="Source/woap_configuration_manager.h"/>
+      <FILE id="XP1EoF" name="woap_dca.cpp" compile="1" resource="0" file="Source/woap_dca.cpp"/>
+      <FILE id="CUcg3X" name="woap_dca.h" compile="0" resource="0" file="Source/woap_dca.h"/>
+      <FILE id="GXeIy4" name="woap_dca_controller.cpp" compile="1" resource="0"
+            file="Source/woap_dca_controller.cpp"/>
+      <FILE id="k0n2qx" name="woap_dca_controller.h" compile="0" resource="0"
+            file="Source/woap_dca_controller.h"/>
+      <FILE id="tdEQW3" name="woap_functions.cpp" compile="1" resource="0"
+            file="Source/woap_functions.cpp"/>
+      <FILE id="JUfeKS" name="woap_functions.h" compile="0" resource="0"
+            file="Source/woap_functions.h"/>
+      <FILE id="GadkLN" name="woap_identifiable.h" compile="0" resource="0"
+            file="Source/woap_identifiable.h"/>
+      <FILE id="M80mDg" name="woap_listener_library.h" compile="0" resource="0"
+            file="Source/woap_listener_library.h"/>
+      <FILE id="C9O1ep" name="woap_fast_fifo.h" compile="0" resource="0"
+            file="Source/woap_fast_fifo.h"/>
+      <FILE id="i8uMhD" name="woap_look_and_feel.cpp" compile="1" resource="0"
+            file="Source/woap_look_and_feel.cpp"/>
+      <FILE id="RWUG5K" name="woap_look_and_feel.h" compile="0" resource="0"
+            file="Source/woap_look_and_feel.h"/>
+      <FILE id="KR2XGL" name="woap_main.cpp" compile="1" resource="0" file="Source/woap_main.cpp"/>
+      <FILE id="OTtmIw" name="woap_main.h" compile="0" resource="0" file="Source/woap_main.h"/>
+      <FILE id="RE4bFq" name="woap_mixer_connection.cpp" compile="1" resource="0"
+            file="Source/woap_mixer_connection.cpp"/>
+      <FILE id="aJ1svT" name="woap_mixer_connection.h" compile="0" resource="0"
+            file="Source/woap_mixer_connection.h"/>
+      <FILE id="UDRePs" name="woap_mixer_mediator_node.cpp" compile="1" resource="0"
+            file="Source/woap_mixer_mediator_node.cpp"/>
+      <FILE id="MAo0Zq" name="woap_mixer_mediator_node.h" compile="0" resource="0"
+            file="Source/woap_mixer_mediator_node.h"/>
+      <FILE id="I5JLmd" name="woap_mixer_node.cpp" compile="1" resource="0"
+            file="Source/woap_mixer_node.cpp"/>
+      <FILE id="jUhoVu" name="woap_mixer_node.h" compile="0" resource="0"
+            file="Source/woap_mixer_node.h"/>
+      <FILE id="xGxQlT" name="woap_mixer_receiver_node.cpp" compile="1" resource="0"
+            file="Source/woap_mixer_receiver_node.cpp"/>
+      <FILE id="wBMJ1h" name="woap_mixer_receiver_node.h" compile="0" resource="0"
+            file="Source/woap_mixer_receiver_node.h"/>
+      <FILE id="YdHa5J" name="woap_mixer_source_node.cpp" compile="1" resource="0"
+            file="Source/woap_mixer_source_node.cpp"/>
+      <FILE id="kFT3aX" name="woap_mixer_source_node.h" compile="0" resource="0"
+            file="Source/woap_mixer_source_node.h"/>
+      <FILE id="FuktRj" name="woap_plugin_manager.cpp" compile="1" resource="0"
+            file="Source/woap_plugin_manager.cpp"/>
+      <FILE id="E946hp" name="woap_plugin_manager.h" compile="0" resource="0"
+            file="Source/woap_plugin_manager.h"/>
+      <FILE id="PYLSnB" name="woap_self_deletable.h" compile="0" resource="0"
+            file="Source/woap_self_deletable.h"/>
+      <FILE id="FnDee1" name="woap_singleton.cpp" compile="1" resource="0"
+            file="Source/woap_singleton.cpp"/>
+      <FILE id="bA5fHt" name="woap_singleton.h" compile="0" resource="0"
+            file="Source/woap_singleton.h"/>
+      <FILE id="IxKfzP" name="woap_solo_bus.cpp" compile="1" resource="0"
+            file="Source/woap_solo_bus.cpp"/>
+      <FILE id="a7xFIx" name="woap_solo_bus.h" compile="0" resource="0" file="Source/woap_solo_bus.h"/>
+      <FILE id="EfF4ws" name="woap_state_manager.cpp" compile="1" resource="0"
+            file="Source/woap_state_manager.cpp"/>
+      <FILE id="CoGqSS" name="woap_state_manager.h" compile="0" resource="0"
+            file="Source/woap_state_manager.h"/>
+      <FILE id="fwL8iz" name="woap_stateful.h" compile="0" resource="0" file="Source/woap_stateful.h"/>
+      <FILE id="zNDJFk" name="woap_track.cpp" compile="1" resource="0" file="Source/woap_track.cpp"/>
+      <FILE id="GJAVx8" name="woap_track.h" compile="0" resource="0" file="Source/woap_track.h"/>
+      <FILE id="nCROXc" name="woap_track_send_node.cpp" compile="1" resource="0"
+            file="Source/woap_track_send_node.cpp"/>
+      <FILE id="if1X8v" name="woap_track_send_node.h" compile="0" resource="0"
+            file="Source/woap_track_send_node.h"/>
+      <FILE id="G4nhD4" name="woap_user.cpp" compile="1" resource="0" file="Source/woap_user.cpp"/>
+      <FILE id="r4UC71" name="woap_user.h" compile="0" resource="0" file="Source/woap_user.h"/>
+      <FILE id="IOfoDP" name="woap_user_group.cpp" compile="1" resource="0"
+            file="Source/woap_user_group.cpp"/>
+      <FILE id="aKBmH3" name="woap_user_group.h" compile="0" resource="0"
+            file="Source/woap_user_group.h"/>
+      <FILE id="rrQCrg" name="woap_user_login.cpp" compile="1" resource="0"
+            file="Source/woap_user_login.cpp"/>
+      <FILE id="jGxXYM" name="woap_user_login.h" compile="0" resource="0"
+            file="Source/woap_user_login.h"/>
+      <FILE id="EnRwkr" name="woap_user_permission.cpp" compile="1" resource="0"
+            file="Source/woap_user_permission.cpp"/>
+      <FILE id="FHI2N3" name="woap_user_permission.h" compile="0" resource="0"
+            file="Source/woap_user_permission.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <VS2017 targetFolder="Builds/VisualStudio2017" vst3Folder="../VST3 SDK"
+            windowsTargetPlatformVersion="10.0.16299.0" smallIcon="Uc9h2B"
+            bigIcon="Uc9h2B" IPPLibrary="Parallel_Static">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" winWarningLevel="4" generateManifest="1" winArchitecture="Win32"
+                       debugInformationFormat="ProgramDatabase" enablePluginBinaryCopyStep="0"
+                       linkTimeOptimisation="0" isDebug="1" optimisation="1" targetName="WOAP Host"/>
+        <CONFIGURATION name="Release" winWarningLevel="4" generateManifest="1" winArchitecture="Win32"
+                       debugInformationFormat="ProgramDatabase" enablePluginBinaryCopyStep="0"
+                       linkTimeOptimisation="1" isDebug="0" optimisation="3" targetName="WOAP Host"
+                       useRuntimeLibDLL="0"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_osc" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="../JUCE/modules"/>
+        <MODULEPATH id="danlin_fontawesome" path="Modules"/>
+      </MODULEPATHS>
+    </VS2017>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="danlin_fontawesome" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_cryptography" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_osc" showAllCode="1" useLocalCopy="0"/>
+  </MODULES>
+  <JUCEOPTIONS JUCE_PLUGINHOST_VST="enabled" JUCE_PLUGINHOST_VST3="enabled"
+               JUCE_ASIO="enabled"/>
+</JUCERPROJECT>

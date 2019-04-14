@@ -1,0 +1,30 @@
+===================================================================================
+
+Download ASIO SDK from http://steinberg.net/en/company/developers.html
+Only header files from "common" folder should be copied into this repository.
+
+===================================================================================
+
+Folder structure
+
+===================================================================================
+
+ASIO
+  - asio.h
+  - asiodrvr.h
+  - ...
+JUCE
+  - examples
+  - extras
+  - modules
+  - ...
+VST3 SDK
+  - base
+  - bin
+  - ...
+WOAP Host
+WOAP PAG Generator
+WOAP Runner
+WOAP WebClient
+WOAP WebProxy
+WOAP WebServer

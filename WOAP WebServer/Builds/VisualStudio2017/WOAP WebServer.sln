@@ -1,0 +1,20 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2017
+
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WOAP WebServer - ConsoleApp", "WOAP WebServer_ConsoleApp.vcxproj", "{7B927751-00DC-947D-D343-A3EEEB884971}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7B927751-00DC-947D-D343-A3EEEB884971}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7B927751-00DC-947D-D343-A3EEEB884971}.Debug|Win32.Build.0 = Debug|Win32
+		{7B927751-00DC-947D-D343-A3EEEB884971}.Release|Win32.ActiveCfg = Release|Win32
+		{7B927751-00DC-947D-D343-A3EEEB884971}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
